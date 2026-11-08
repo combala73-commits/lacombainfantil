@@ -1,0 +1,35 @@
+---
+description: Contexto y normas para gestionar La Comba Infantil (PrestaShop)
+alwaysApply: true
+---
+
+# La Comba Infantil
+
+Tienda PrestaShop en `https://lacombainfantil.com/`. Contacto: Valencia, C/ Dolores Marqués 15; `info@lacombainfantil.com`.
+
+## Conexión
+
+- Base URL: `https://lacombainfantil.com`
+- Webservice: `https://lacombainfantil.com/api/`
+- Credenciales solo en `.env` (`PRESTASHOP_WS_KEY`). Nunca imprimir ni pegar la clave en el chat.
+- Cliente: `scripts/prestashop.ps1` (PowerShell). Leer con `Get-Content` o ejecutar comandos; no reinventar autenticación.
+
+## Permisos de escritura
+
+- GET está permitido para explorar.
+- POST/PUT/PATCH/DELETE de productos, categorías, pedidos o clientes **solo con confirmación explícita** de Margarita.
+- Mostrar el borrador del cambio (antes/después) y esperar OK.
+- No borrar recursos. No tocar clientes, direcciones ni pedidos.
+- Textos: skill `contenido-seo`. Precio, stock y altas: skill `catalogo-stock`. Fotos de ficha: skill `imagenes-producto`.
+
+## Contenido
+
+- Idioma de la tienda: español (España). Tono cercano, claro, para familias.
+- No inventar stock, precios, edades, materiales ni certificaciones si no están en la ficha o los confirma la usuaria.
+- Al reescribir fichas, conservar referencia, EAN, marca y datos técnicos existentes.
+- Margarita decide. Si un encargo choca con buenas prácticas SEO o de catálogo PrestaShop, mostrar el borrador pedido, una alternativa breve y aplicar lo que ella confirme.
+
+## Tareas
+
+- La lista vive en `TAREAS.md`. Cuando Margarita pida la lista, las tareas o los pendientes, leer ese archivo y mostrarlo.
+- No empezar una tarea de la lista hasta que lo pida.
