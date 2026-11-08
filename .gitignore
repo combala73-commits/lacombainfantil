@@ -1,0 +1,8 @@
+.env
+tmp-*.xml
+tmp-*.txt
+*.log
+.DS_Store
+Thumbs.db
+node_modules/
+.venv/
