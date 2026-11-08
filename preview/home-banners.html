@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>La Comba — franja de categorías</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #f3f1ee; color: #2c2c2c; font-family: Arial, Helvetica, sans-serif; }
+    .page { max-width: 1120px; margin: 24px auto; background: #fff; }
+    .topbar { background: #1a1a1a; color: #fff; font-size: 12px; text-align: center; padding: 8px; }
+    .brand { display: flex; align-items: center; justify-content: space-between; padding: 18px 28px 12px; }
+    .logo { font-family: Georgia, serif; color: #c9b44a; font-size: 28px; line-height: 1; }
+    .logo small { display: block; font-size: 11px; color: #8a8a8a; letter-spacing: 0.04em; }
+    .nav { background: #7aa3a4; color: #fff; font-size: 11px; letter-spacing: 0.08em; padding: 12px 28px; }
+    .section { padding: 22px 28px 28px; }
+    .grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+    .card { background: #fff; border: 1px solid #ece8e2; }
+    .photo { height: 220px; display: flex; align-items: center; justify-content: center; background: #f7f5f2; overflow: hidden; }
+    .photo img { width: 100%; height: 100%; object-fit: contain; }
+    .foot { background: #7aa3a4; color: #fff; padding: 14px 16px 16px; }
+    .foot h2 { margin: 0 0 4px; font-family: Georgia, serif; font-size: 20px; font-weight: 400; color: #fff; }
+    .foot p { margin: 0 0 12px; font-size: 12px; color: #eef6f6; }
+    .btn { display: inline-block; border: 1px solid #fff; color: #fff; padding: 7px 14px; font-size: 12px; }
+    @media (max-width: 720px) { .grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="topbar">Envío desde 4,95 € · Gratis para +60 € a Península</div>
+    <div class="brand">
+      <div class="logo">La Comba<small>todo para l@s más peques</small></div>
+    </div>
+    <div class="nav">INICIO · NUEVOS PRODUCTOS · IMANIX · MELI · PRECIOS ESPECIALES</div>
+    <div class="section">
+      <div class="grid">
+        <article class="card">
+          <div class="photo"><img src="img/accesorios.jpg" alt="Sujetachupete Little Dutch"></div>
+          <div class="foot">
+            <h2>Accesorios bebé y niños</h2>
+            <p>Paseo y canastilla · 5 uds. en stock</p>
+            <span class="btn">Ver accesorios</span>
+          </div>
+        </article>
+        <article class="card">
+          <div class="photo"><img src="img/juguetes.jpg" alt="Clixo Airplanes"></div>
+          <div class="foot">
+            <h2>Juguetes</h2>
+            <p>Construcción y juego · 3 uds. en stock</p>
+            <span class="btn">Ver juguetes</span>
+          </div>
+        </article>
+        <article class="card">
+          <div class="photo"><img src="img/disfraces.jpg" alt="Catrina Marisol Souza"></div>
+          <div class="foot">
+            <h2>Disfraces</h2>
+            <p>Halloween · Catrina Souza · 1 ud.</p>
+            <span class="btn">Ver disfraces</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
